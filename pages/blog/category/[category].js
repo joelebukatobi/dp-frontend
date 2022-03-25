@@ -43,7 +43,7 @@ export default function PostCategories({ postCategory, ltPost, category }) {
           <form className="categories__search">
             <input type="text" className="input" placeholder="Search this blog" />
             <button className="btn categories__search__button" type="submit">
-              <img className="categories__search__button__image" src="/images/mail.svg" alt="" />
+              <img className="categories__search__button__image" src="/images/search.svg" alt="" />
             </button>
           </form>
         </div>
