@@ -90,9 +90,14 @@
     background-color: $color-primary;
     padding: 6.4rem 9.6rem 7.2rem 6.4rem;
     margin-bottom: 6.4rem;
+    &__group {
+      margin-bottom: 2.4rem;
+      & .heading-3 {
+        color: $color-white !important;
+      }
+    }
     & > * {
-      margin: 0.8rem 0;
-      color: $color-white;
+      color: $color-white !important;
     }
   }
 

@@ -20,17 +20,19 @@ export default function Home({ bgPost }) {
             <div className="header__bg__section"></div>
           </div>
           <div className="header__text">
-            <h1 className="heading-1">Dear Potential</h1>
+            <h1 className="heading-1">Welcome to Dear Potential</h1>
             <hr className="separator" />
-            <p className="paragraph header__text__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
-              faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
-              dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin.
-            </p>
+            <h4 className="heading-4 header__text__heading-three">We are Sane, whole and loved by God</h4>
             <div className="header__text__sm">
-              <img className="header__text__sm__icon" src="images/facebook.svg" alt="" />
-              <img className="header__text__sm__icon" src="images/instagram.svg" alt="" />
-              <img className="header__text__sm__icon" src="images/twitter.svg" alt="" />
+              <Link href={'https://web.facebook.com/dearpotential/'}>
+                <img className="header__text__sm__icon" src="images/facebook.svg" alt="" />
+              </Link>
+              <Link href={'https://www.instagram.com/dearpotential/'}>
+                <img className="header__text__sm__icon" src="images/instagram.svg" alt="" />
+              </Link>
+              <Link href={'https://twitter.com/dearpotential/'}>
+                <img className="header__text__sm__icon" src="images/twitter.svg" alt="" />
+              </Link>
             </div>
           </div>
         </div>
@@ -48,17 +50,16 @@ export default function Home({ bgPost }) {
               </div>
               <div className="who-we-are__body__text">
                 <p className="paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et ut duis eget diam amet volutpat sit nisl.
-                  Egestas non et enim, amet iaculis. Tincidunt elementum consectetur metus, ut ac. Sagittis, eget sit
-                  vitae, morbi purus egestas lorem consectetur. Sed eu in facilisis quis tincidunt hendrerit nunc. Non
-                  nullam elit, amet, dignissim massa eget convallis. Duis lorem orci, adipiscing nibh sed odio laoreet
-                  non suscipit. Maecenas donec semper ullamcorper velit dolor, sed eu adipiscing sit. Cras proin a proin
-                  tincidunt malesuada mattis sed elementum. Cursus ipsum est morbi est, molestie. Ultricies feugiat
-                  hendrerit commodo, amet facilisi a. Viverra lectus vitae morbi diam vitae risus, urna. Nisl, quis
-                  viverra sagittis, consectetur proin. Est, vel tempor faucibus vestibulum nisi ullamcorper elementum.
-                  Maecenas donec semper ullamcorper velit dolor, sed eu adipiscing sit. Cras proin a proin tincidunt
-                  malesuada mattis sed elementum. Cursus ipsum est morbi est, molestie. Ultricies feugiat hendrerit
-                  commodo.
+                  Dear Potential helps equip you with the knowledge, wisdom and tools you need to maximise your
+                  relationships and singleness preparing you to live whole, sane and have a purposeful marriage centred
+                  on Christ. It was founded by Deborah Briggs in August 2018 during her early twenties.
+                  <br />
+                  <br />
+                  Dear Potential is a community that encourages purposeful living. We hold online and offline events
+                  ranging from the Singles' Hangout, to the Guys' Conference and our podcast, launched in March 2021.
+                  <br />
+                  <br />
+                  Be a part of the movement/community, join <Link href="">here</Link>
                 </p>
               </div>
             </div>
@@ -104,13 +105,10 @@ export default function Home({ bgPost }) {
         <div className="container">
           <div className="featured">
             <div className="featured__txt">
-              <h2 className="heading-3">
-                Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-              </h2>
+              <h2 className="heading-3">At Dear Potential</h2>
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt
-                et faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
-                dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,
+                We are replacing lies with Gospel truths through our teachings, events and hangouts, we equip, educate
+                and inspire you to live purposeful, having a God-centered marriage as a result.
               </p>
               <img src="images/dots-image.svg" alt="" />
             </div>

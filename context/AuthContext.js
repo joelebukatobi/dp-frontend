@@ -1,38 +1,38 @@
-import { createContext, useState } from 'react';
-import { useRouter } from 'next/router';
-import { NEXT_URL } from '@/config/index';
+// import { createContext, useState } from 'react';
+// import { useRouter } from 'next/router';
+// import { NEXT_URL } from '@/config/index';
 
-const AuthContext = createContext();
+// const AuthContext = createContext();
 
-export const authProvider = ({ children }) => {
-  const [email, setEmail] = useState(null);
-  const [error, setError] = useState(null);
+// export const authProvider = ({ children }) => {
+//   const [email, setEmail] = useState(null);
+//   const [error, setError] = useState(null);
 
-  const router = useRouter();
+//   const router = useRouter();
 
-  // Send email
-  const send = async ({ email, name, message }) => {
-    const res = await fetch(`${NEXT_URL}/api/email`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-        message,
-        name,
-      }),
-    });
+//   // Send email
+//   const send = async ({ email, name, message }) => {
+//     const res = await fetch(`${NEXT_URL}/api/email`, {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({
+//         email,
+//         message,
+//         name,
+//       }),
+//     });
 
-    const data = await res.json();
+//     const data = await res.json();
 
-    if (res.ok) {
-      setEmail(data.email);
-    } else {
-      setError(data.message);
-      setError(null);
-    }
-  };
+//     if (res.ok) {
+//       setEmail(data.email);
+//     } else {
+//       setError(data.message);
+//       setError(null);
+//     }
+//   };
 
-  return <AuthContext.Provider value={{ send }}>{children}</AuthContext.Provider>;
-};
+//   return <AuthContext.Provider value={{ send }}>{children}</AuthContext.Provider>;
+// };

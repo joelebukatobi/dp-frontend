@@ -32,13 +32,13 @@ export default function Footer() {
         <div className="footer__dev">
           <p className="paragraph">Designed and Developed by JetDev</p>
           <div className="footer__dev__sm">
-            <Link href={'/'}>
+            <Link href={'https://web.facebook.com/dearpotential/'}>
               <img className="header__text__sm__icon" src="/images/facebook.svg" alt="" />
             </Link>
-            <Link href={'/'}>
+            <Link href={'https://www.instagram.com/dearpotential/'}>
               <img className="header__text__sm__icon" src="/images/instagram.svg" alt="" />
             </Link>
-            <Link href={'/'}>
+            <Link href={'https://twitter.com/dearpotential/'}>
               <img className="header__text__sm__icon" src="/images/twitter.svg" alt="" />
             </Link>
           </div>

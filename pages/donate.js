@@ -25,18 +25,21 @@ export default function donate() {
       <div className="container">
         <div className="about">
           <div className="about__header">
-            <p className="paragraph">Who we are</p>
+            <p className="paragraph">DONATE</p>
             <hr className="separator" />
-            <h3 className="heading-3">
-              Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-            </h3>
+            <h3 className="heading-3">Help bring out potential by maximizing singleness</h3>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
-              faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
-              dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et faucibus. Sed ac nec
-              elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas dictumst vel dolor. Tempor
-              aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              That's what we are all about, we aim to replace the lies the current generation have been sold with Gospel
+              truths through our teachings, events and hangouts, we equip, educate and inspire you to live purposeful,
+              having a God-centered marriage as a result.
+              <br />
+              <br />
+              We really do believe that wholesome relationships and marriages are possible but only when young adults
+              have maximized their singleness and by so doing make use of the inherent potential within them across
+              different areas in life as a whole.
+              <br />
+              <br />
+              We can not do this alone and so we invite you to join us maximize inherent potentials in this generation.
             </p>
             <button className="btn">Donate</button>
           </div>
@@ -71,13 +74,10 @@ export default function donate() {
       <div className="container">
         <div className="featured">
           <div className="featured__txt">
-            <h2 className="heading-3">
-              Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-            </h2>
+            <h2 className="heading-3">At Dear Potential</h2>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
-              faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
-              dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,
+              We are replacing lies with Gospel truths through our teachings, events and hangouts, we equip, educate and
+              inspire you to live purposeful, having a God-centered marriage as a result.
             </p>
             <img src="images/dots-image.svg" alt="" />
           </div>

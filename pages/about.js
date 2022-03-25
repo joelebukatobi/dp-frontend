@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from '@/components/Layout';
 
 export default function AboutPage() {
@@ -28,17 +29,18 @@ export default function AboutPage() {
             <div className="about__header">
               <p className="paragraph">Who we are</p>
               <hr className="separator" />
-              <h3 className="heading-3">
-                Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-              </h3>
+              <h3 className="heading-3">Dear Potential helps equip you with the knowledge, wisdom and tools</h3>
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt
-                et faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
-                dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et faucibus. Sed ac nec
-                elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas dictumst vel dolor.
-                Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.
+                you need to maximise your relationships and singleness preparing you to live whole, sane and have a
+                purposeful marriage centred on Christ. It was founded by Deborah Briggs in August 2018 during her early
+                twenties.
+                <br />
+                <br />
+                Dear Potential is a community that encourages purposeful living. We hold online and offline events
+                ranging from the Singles' Hangout, to the Guys' Conference and our podcast, launched in March 2021.
+                <br />
+                <br />
+                Be a part of the movement/community, join <Link href="">here</Link>
               </p>
             </div>
             <div className="about__container">
@@ -56,14 +58,19 @@ export default function AboutPage() {
             </div>
             <img className="decoration" src="images/dots-image.svg" alt="" />
             <div className="vision__text">
-              <h3 className="heading-3">
-                Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-              </h3>
-              <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt
-                et faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
-                dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,{' '}
-              </p>
+              <div className="vision__text__group">
+                <h3 className="heading-3">VISION:</h3>
+                <p className="paragraph">
+                  We see singles living purposeful, maximizing their singleness and having a God centred marriage.
+                </p>
+              </div>
+              <div className="vision__text__group">
+                <h3 className="heading-3">MISSION:</h3>
+                <p className="paragraph">
+                  Through our teachings, events and hangouts, we equip, educate and inspire you to live purposeful,
+                  having a God-centered marriage as a result.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -92,12 +99,11 @@ export default function AboutPage() {
         <div className="container">
           <div className="mission">
             <div className="mission__header">
-              <h3 className="heading-3">
-                Lorem ipsum dolor sit amet, consectetur dolor sit amet, adipiscing elit elit elit elit.
-              </h3>
+              <h3 className="heading-3">Making sure that the present</h3>
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt
-                et faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
+                day young adult is maximizing their singleness in every area is one of our core focus. One thing we're
+                quite particular about at Dear Potential is replacing the lies the current generation have been sold
+                with Gospel truths.
               </p>
             </div>
             <div className="mission__image">

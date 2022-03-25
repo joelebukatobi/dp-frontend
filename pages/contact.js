@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import Layout from '@/components/Layout';
 import { API_URL } from '@/config/index';
 
@@ -53,23 +54,32 @@ export default function ContactPage() {
           <div className="contact__text">
             <div className="contact__text__content">
               <h2 className="heading-2">
-                Hello
+                Hello 👋
                 <br />
                 Get In Touch
               </h2>
               <hr className="separator" />
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id aliquet purus, maecenas sodales eu diam enim
-                sit. Egestas nunc non feugiat pharetra. Habitant adipiscing viverra ultrices nisl, at dictum orci, id
-                urna. Sit a amet, ac mi facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id aliquet
-                purus, maecenas sodales eu diam enim sit.
+                Want to talk to us about a project, we would be absolutely delighted to work with you. Just shoot us an
+                email with the form on you right or better yet find our social media handles below as well as a phone
+                number.
+                <br />
+                <br />
+                If you would love talk to us about a personal issue as well or need counselling we be happy to help out
+                as well.
               </p>
               <p className="paragraph">info@dearpotential.com</p>
               <p className="paragraph">+2348179883178</p>
               <div className="social__media">
-                <img className="social__media__icon" src="images/facebook.svg" alt="" />
-                <img className="social__media__icon" src="images/instagram.svg" alt="" />
-                <img className="social__media__icon" src="images/twitter.svg" alt="" />
+                <Link href={'https://www.instagram.com/dearpotential/'}>
+                  <img className="social__media__icon" src="images/facebook.svg" alt="" />
+                </Link>
+                <Link href={'https://www.twitter.com/dearpotential/'}>
+                  <img className="social__media__icon" src="images/instagram.svg" alt="" />
+                </Link>
+                <Link href={'https://www.facebook.com/dearpotential/'}>
+                  <img className="social__media__icon" src="images/twitter.svg" alt="" />
+                </Link>
               </div>
             </div>
             <form className="contact__text__form" onSubmit={handleSubmit}>

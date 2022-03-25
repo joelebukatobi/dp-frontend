@@ -52,9 +52,12 @@
     & .heading-1 {
       color: $color-white;
     }
-    &__paragraph {
+    &__heading-three {
       width: 70rem;
       text-align: center;
+      color: $color-white;
+      font-weight: 600;
+      font-family: $font-primary;
     }
     &__sm {
       margin-top: 3.2rem;

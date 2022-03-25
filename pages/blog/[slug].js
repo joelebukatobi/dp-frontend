@@ -11,7 +11,7 @@ export default function BlogPost({ post }) {
       {/* <!-- Header --> */}
       <div className="header header-two">
         <div className="header__container">
-          {/* <!-- <img className="header__container__image header-two__image" src="images/blog-header.jpg" alt=""> --> */}
+          <img className="header__container__image header-two__image" src="/images/slug-header.png" alt="" />
         </div>
         <div className="header__bg">
           <div className="header__bg__section"></div>
