@@ -76,16 +76,15 @@
       // height: 100%;
       display: flex;
       justify-content: center;
-      &__image {
-        // background-position: cover;
-        // left: -120%;
-      }
     }
     &__bg {
       height: 100%;
     }
     &__text {
       // top: 18rem;s
+      & .heading-1 {
+        font-size: 3.2rem;
+      }
       padding: 0 2.4rem;
       &__heading-three {
         width: 100%;
