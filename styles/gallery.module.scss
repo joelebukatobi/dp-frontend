@@ -1,0 +1,99 @@
+.gallery {
+  padding: 9.6rem 0;
+  display: flex;
+  flex-direction: column;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+    &__card {
+      position: relative;
+      width: 30%;
+      height: 35.2rem;
+      overflow: hidden;
+      &__image {
+        width: 150%;
+        height: 100%;
+        margin-left: -10rem;
+      }
+      &::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: '';
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          180deg,
+          rgba($color-white, 0) 0%,
+          rgba($color-primary, 0.404106) 72.92%,
+          rgba($color-primary, 0.54) 84.9%,
+          rgba($color-primary, 0.54) 95.83%
+        );
+      }
+      & .heading-4 {
+        position: absolute;
+        left: 3.2rem;
+        bottom: 3.2rem;
+        z-index: 2;
+        color: $color-white;
+        font-family: $font-primary;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 4rem 2.4rem 4.8rem 2.4rem;
+    &__row {
+      flex-direction: column;
+      &__card {
+        width: 100%;
+        height: 43rem;
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+}
+
+.theme {
+  padding: 0 0 9.8rem 0;
+  display: flex;
+  &__image {
+    width: 35%;
+    box-shadow: 1px 2px 5px rgba(158, 158, 158, 0.25);
+    &__pic {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    width: 65%;
+    background-color: $color-white;
+    color: $color-primary;
+    box-shadow: 1px 1px 5px rgba(158, 158, 158, 0.25);
+    padding: 7.2rem 9.6rem 7.2rem 9.6rem;
+    & .heading-3 {
+      color: $color-primary;
+      margin-bottom: 3.2rem;
+      & span {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+    flex-direction: column;
+    &__image {
+      width: 100%;
+      margin-bottom: 3.2rem;
+    }
+
+    &__text {
+      width: 100%;
+      padding: 2.4rem;
+    }
+  }
+}

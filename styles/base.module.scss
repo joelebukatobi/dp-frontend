@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;300&display=swap');
+// @import url('../asset/fonts/Futura-Md.ttf');
+
+/*
+  Color Variables
+  ---------------
+*/
+$color-primary: #06225d;
+$color-secondary: #dd792f;
+$color-secondary-light: #ee885e;
+$color-white: #ffffff;
+$color-black: #000000;
+/* 
+  Mixins 
+  ------
+*/
+@font-face {
+  font-family: 'Futura-Md';
+  src: url(../asset/fonts/Futura-Md.ttf);
+}
+
+@mixin centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+/*
+  Font Variables
+  --------------
+*/
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Futura-Md';
+$font-tertiary: 'Prompt', sans-serif;
+/*
+  Mobile Responsiveness
+  ---------------------
+*/
+
+/*
+  Main
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input:link,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+input::-webkit-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::-moz-placeholder {
+  font-family: $font-primary;
+}
+
+input:-ms-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::-ms-input-placeholder {
+  font-family: $font-primary;
+}
+
+input::placeholder {
+  font-family: $font-primary;
+}
+
+textarea::-webkit-input-placeholder {
+  color: $color-white;
+}
+
+textarea::-moz-placeholder {
+  color: $color-white;
+}
+
+textarea:-ms-input-placeholder {
+  color: $color-white;
+}
+
+textarea::-ms-input-placeholder {
+  color: $color-white;
+}
+
+textarea::placeholder {
+  color: $color-white;
+}
+
+button:link,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% 1rem
+  font-family: $font-primary;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 50%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 50%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+}

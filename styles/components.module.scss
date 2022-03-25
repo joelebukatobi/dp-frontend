@@ -1,0 +1,173 @@
+.btn {
+  height: 4rem;
+  padding: 0 2rem;
+  background-color: $color-primary;
+  color: $color-white;
+  text-transform: capitalize;
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  font-weight: 400;
+  outline: none;
+  border: 0px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+input {
+  height: 4.8rem;
+  border: 2px solid $color-white;
+  width: 50rem;
+  padding-left: 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  // color:
+  @media (min-width: 320px) and (max-width: 576px) {
+    &::-webkit-inpdut-placeholder {
+      font-size: 1.4rem;
+    }
+    &::-moz-placeholder {
+      font-size: 1.4rem;
+    }
+    &:-ms-input-placeholder {
+      font-size: 1.4rem;
+    }
+    &::-ms-input-placeholder {
+      font-size: 1.4rem;
+    }
+    &::-webkit-input-placeholder {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &::placeholder {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid $color-white;
+  border-radius: 0.5rem;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  color: $color-black;
+  font-size: 1.6rem;
+  outline: none;
+  font-family: $font-primary;
+}
+
+.separator {
+  width: 8rem;
+  height: 0.3rem;
+  background: $color-secondary;
+  border: 0;
+  margin: 2.4rem 0;
+}
+
+// Banner
+.banner {
+  position: relative;
+  padding: 9.6rem 0;
+  &__image {
+    width: 100%;
+    height: 60rem;
+  }
+  &__text {
+    @include centre;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: $color-white;
+    &__header {
+      @include centre;
+      & .heading-2 {
+        color: $color-white;
+      }
+      & .paragraph {
+        width: 64rem;
+        text-align: center;
+        margin-bottom: 2.4rem;
+      }
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &__btn {
+        background-color: $color-secondary;
+        width: 30%;
+        margin-top: 2.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    &__text {
+      &__header {
+        & .paragraph {
+          width: 85%;
+        }
+      }
+      &__form {
+        width: 100%;
+        & input {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0 12.8rem;
+  }
+  @media all and (min-width: 1440px) and (max-width: 1920px) {
+    padding: 0 24rem;
+  }
+  @media all and (min-width: 1920px) {
+    padding: 0 32rem;
+    max-width: 192rem;
+    margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 576px) {
+      // border: 2px solid red;
+    }
+  }
+}
+
+.container-navbar {
+  position: absolute;
+  z-index: 30;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  @media (min-width: 320px) and (max-width: 576px) {
+    // background-color: $color-white;
+
+    text-align: unset;
+  }
+}
+
+.container-footer {
+  background-color: $color-primary;
+  width: 100%;
+  // max-width: unset;
+}
+
+.container-contact__text {
+  height: 100%;
+}
+
+.container-categories {
+  border: 0.1rem solid rgba(158, 158, 158, 0.25);
+  @media (min-width: 320px) and (max-width: 576px) {
+    border: none;
+  }
+}

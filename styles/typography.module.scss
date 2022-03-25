@@ -1,0 +1,57 @@
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  font-family: $font-secondary;
+  color: $color-primary;
+}
+.heading-1 {
+  font-size: 5rem;
+  font-weight: 500;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 3.7rem;
+  }
+}
+
+.heading-2 {
+  font-size: 3.7rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 2.8rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2.8rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 2.1rem;
+  }
+}
+
+.heading-4 {
+  font-size: 2.1rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+}
+
+.heading-5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  @media (min-width: 320px) and (max-width: 576px) {
+    // font-size: 1.6rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    font-size: 1.8rem;
+  }
+}
+
+.post-details {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: $color-secondary;
+}
