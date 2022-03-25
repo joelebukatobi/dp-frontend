@@ -51,6 +51,7 @@
     color: $color-white;
     & .heading-1 {
       color: $color-white;
+      text-align: center;
     }
     &__heading-three {
       width: 70rem;
@@ -86,7 +87,7 @@
     &__text {
       // top: 18rem;s
       padding: 0 2.4rem;
-      & .paragraph {
+      &__heading-three {
         width: 100%;
       }
     }
