@@ -59,6 +59,7 @@
       }
       .social__media {
         margin-top: 1.2rem;
+        cursor: pointer;
         & > * {
           margin-right: 0.8rem;
         }
@@ -79,7 +80,7 @@
   }
 
   @media (min-width: 320px) and (max-width: 576px) {
-    // height: 100%;
+    height: unset;
     &__container {
       height: 100%;
       &__image {
@@ -92,11 +93,13 @@
       height: 100%;
     }
     &__text {
+      padding-top: 10.4rem;
       height: 100%;
       padding: 0 2.4rem;
       flex-direction: column;
       justify-content: flex-end;
       &__content {
+        margin-top: 16vh;
         width: 100%;
         & .paragraph:nth-of-type(2),
         & .paragraph:nth-of-type(3),
