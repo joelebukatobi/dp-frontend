@@ -37,7 +37,7 @@ export default function BlogPost({ post }) {
             </div>
             <div className="header__text__bottom__text">
               <Link href={`/blog/author/${post.attributes.user.data.attributes.username}?`}>
-                <p className="paragraph">{post.attributes.user.data.attributes.username}</p>
+                <p>{post.attributes.user.data.attributes.username}</p>
               </Link>
             </div>
           </div>
@@ -52,12 +52,12 @@ export default function BlogPost({ post }) {
 
           <div className="post__body">
             <div className="post__body__section">
-              <h3 className="heading-3">{post.attributes.heading}</h3>
-              <p className="paragraph">{post.attributes.introduction}</p>
+              <h3>{post.attributes.heading}</h3>
+              <p>{post.attributes.introduction}</p>
             </div>
             <div className="post__body__section">
-              <h3 className="heading-3">{post.attributes.subheading}</h3>
-              <p className="paragraph">{post.attributes.main}</p>
+              <h3>{post.attributes.subheading}</h3>
+              <p>{post.attributes.main}</p>
             </div>
           </div>
         </div>

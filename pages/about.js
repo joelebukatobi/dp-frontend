@@ -1,36 +1,22 @@
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 
 export default function AboutPage() {
   return (
     <div>
       <Layout>
         {/* <!-- Header --> */}
-        <div className="header header-two">
-          <div className="header__container">
-            <img className="header__container__image header-two__image" src="images/about-header.jpg" alt="" />
-          </div>
-          <div className="header__bg">
-            <div className="header__bg__section"></div>
-            <div className="header__bg__section"></div>
-            <div className="header__bg__section"></div>
-            <div className="header__bg__section"></div>
-          </div>
-          <div className="header__text">
-            <h1 className="heading-2 header-two__heading">About Us</h1>
-            <hr className="separator" />
-            <p className="paragraph">Discover what we've about at Dear Potential</p>
-          </div>
-        </div>
+        <Header title={'About Us'} image={'None'} caption={"Discover what we've about at Dear Potential"} />
 
         {/* <!--  About --> */}
         <div className="container">
           <div className="about">
             <div className="about__header">
-              <p className="paragraph">Who we are</p>
+              <p>Who we are</p>
               <hr className="separator" />
-              <h3 className="heading-3">Dear Potential helps equip you with the knowledge, wisdom and tools</h3>
-              <p className="paragraph">
+              <h3>Dear Potential helps equip you with the knowledge, wisdom and tools</h3>
+              <p>
                 you need to maximise your relationships and singleness preparing you to live whole, sane and have a
                 purposeful marriage centred on Christ. It was founded by Deborah Briggs in August 2018 during her early
                 twenties.
@@ -59,14 +45,12 @@ export default function AboutPage() {
             <img className="decoration" src="images/dots-image.svg" alt="" />
             <div className="vision__text">
               <div className="vision__text__group">
-                <h3 className="heading-3">VISION:</h3>
-                <p className="paragraph">
-                  We see singles living purposeful, maximizing their singleness and having a God centred marriage.
-                </p>
+                <h3>VISION:</h3>
+                <p>We see singles living purposeful, maximizing their singleness and having a God centred marriage.</p>
               </div>
               <div className="vision__text__group">
-                <h3 className="heading-3">MISSION:</h3>
-                <p className="paragraph">
+                <h3>MISSION:</h3>
+                <p>
                   Through our teachings, events and hangouts, we equip, educate and inspire you to live purposeful,
                   having a God-centered marriage as a result.
                 </p>
@@ -80,9 +64,9 @@ export default function AboutPage() {
           <img src="images/banner-image.jpg" alt="" className="banner__image" />
           <div className="banner__text">
             <div className="banner__text__header">
-              <h2 className="heading-2">Newsletter</h2>
+              <h2>Newsletter</h2>
               <hr className="separator" />
-              <p className="paragraph">
+              <p>
                 Want to get the latest update from us?
                 <br />
                 Then fill the form below to subscribe to our monthly newsletter
@@ -99,8 +83,8 @@ export default function AboutPage() {
         <div className="container">
           <div className="mission">
             <div className="mission__header">
-              <h3 className="heading-3">Making sure that the present</h3>
-              <p className="paragraph">
+              <h3>Making sure that the present</h3>
+              <p>
                 day young adult is maximizing their singleness in every area is one of our core focus. One thing we're
                 quite particular about at Dear Potential is replacing the lies the current generation have been sold
                 with Gospel truths.

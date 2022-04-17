@@ -17,7 +17,7 @@ export default function gallery() {
         <div className="header__text">
           <h1 className="heading-2 header-two__heading">Our Gallery</h1>
           <hr className="separator" />
-          <p className="paragraph"></p>
+          <p></p>
         </div>
       </div>
 
@@ -27,11 +27,11 @@ export default function gallery() {
           <div className="gallery__row">
             <div className="gallery__row__card">
               <img className="gallery__row__card__image" src="images/image-3.jpg" alt="" />
-              <h4 className="heading-4"> Guys Conference, 2019</h4>
+              <h4> Guys Conference, 2019</h4>
             </div>
             <div className="gallery__row__card">
               <img className="gallery__row__card__image" src="images/image-1.jpg" alt="" />
-              <h4 className="heading-4"> Singles Hangout, 2019</h4>
+              <h4> Singles Hangout, 2019</h4>
             </div>
             <div className="gallery__row__card">
               <img className="gallery__row__card__image" src="" alt="" />
@@ -58,10 +58,10 @@ export default function gallery() {
             <img className="theme__image__pic" src="images/flyer.jpg" alt="" />
           </div>
           <div className="theme__text">
-            <h3 className="heading-3">
+            <h3>
               May Theme: <span>Single and Focused</span>
             </h3>
-            <p className="paragraph">
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros eu neque faucibus risus tincidunt et
               faucibus. Sed ac nec elementum vel nisl. Blandit egestas mauris consectetur quam convallis maecenas
               dictumst vel dolor. Tempor aliquam felis commodo in purus sollicitudin. Lorem ipsum dolor sit amet,

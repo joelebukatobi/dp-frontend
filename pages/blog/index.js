@@ -1,35 +1,22 @@
 import Link from 'next/link';
 import { API_URL } from '@/config/index';
 import Layout from '@/components/Layout';
-import Featured from '@/components/Featured';
-import Recommended from '@/components/Recommended';
-import Latest from '@/components/Latest';
+import FeaturedPost from '@/components/FeaturedPost';
+import RecommendedPosts from '@/components/RecommendedPosts';
+import PostCard from '@/components/PostCard';
+import Header from '@/components/Header';
 import Pagination from '@/components/Pagination';
 import { BLOG_COUNT } from '@/config/index';
 const qs = require('qs');
 
 export default function index({ featured, reBlog, postCategory, ltPost, page }) {
-  console.log(ltPost.meta.pagination.total);
+  // console.log(ltPost.meta.pagination.total);
 
   return (
     <Layout>
       {/* <!-- Header --> */}
-      <div className="header header-two">
-        <div className="header__container">
-          <img className="header__container__image header-two__image" src="/images/blog-header.png" alt="" />
-        </div>
-        <div className="header__bg">
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-        </div>
-        <div className="header__text">
-          <h1 className="heading-2 header-two__heading">Blog</h1>
-          <hr className="separator" />
-          <p className="paragraph">Some of the musings of a couple of Potentials</p>
-        </div>
-      </div>
+
+      <Header title={'Blog'} image={'/images/blog-bg.jpg'} caption={'Some of the musings of a couple of Potentials'} />
 
       <div className="container container-categories">
         <div className="categories">
@@ -57,22 +44,25 @@ export default function index({ featured, reBlog, postCategory, ltPost, page }) 
       <div className="container">
         <div className="featured-header">
           <div className="featured-header__main">
-            <h4 className="heading-4">Featured</h4>
+            <h4>Featured</h4>
           </div>
           <div className="featured-header__other">
-            <h4 className="heading-4">Recommended</h4>
+            <h4>Recommended</h4>
           </div>
         </div>
         <div className="featured-post">
           <div className="featured-post__main">
             <h4 className="heading-4 featured-post__main__header">Featured</h4>
-            <Featured featured={featured} />
+            <FeaturedPost featured={featured} />
           </div>
           <div className="featured-post__other">
             <h4 className="heading-4 featured-post__other__header">Recommended</h4>
-            {reBlog.map((recommended) => (
-              <Recommended key-={recommended.id} recommended={recommended} />
-            ))}
+
+            <div className="featured-post__other__col">
+              {reBlog.map((recommended) => (
+                <RecommendedPosts key={recommended.id} recommended={recommended} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -85,10 +75,10 @@ export default function index({ featured, reBlog, postCategory, ltPost, page }) 
       {/* <!-- Blog Posts --> */}
       <div className="container">
         <div className="blog-post">
-          <h4 className="heading-4">Latest Post</h4>
+          <h4>Latest Post</h4>
           <div className="blog-post__posts">
-            {ltPost.data.map((latestPost) => (
-              <Latest key-={latestPost.id} latestPost={latestPost} />
+            {ltPost.data.map((post) => (
+              <PostCard key={post.id} post={post} />
             ))}
           </div>
           <div className="blog-post__pagination">

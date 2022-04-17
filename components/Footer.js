@@ -11,26 +11,26 @@ export default function Footer() {
         </div>
         <ul className="footer__text">
           <li className="footer__text__item">
-            <p className="paragraph">
+            <p>
               <span>©</span> 2020 Dear Potential All Rights Reserved
             </p>
           </li>
           <li className="footer__text__item">
             <img className="footer__text__item__image" src="/images/mail.svg" alt="" />
-            <p className="paragraph">info@dearpotential.com</p>
+            <p>info@dearpotential.com</p>
           </li>
           <li className="footer__text__item">
             <img className="footer__text__item__image" src="/images/phone.svg" alt="" />
-            <p className="paragraph">+234-817-988-3178</p>
+            <p>+234-817-988-3178</p>
           </li>
           <li className="footer__text__item">
             <img className="footer__text__item__image" src="/images/phone.svg" alt="" />
-            <p className="paragraph">+234-817-988-3178</p>
+            <p>+234-817-988-3178</p>
           </li>
         </ul>
         <hr />
         <div className="footer__dev">
-          <p className="paragraph">Designed and Developed by JetDev</p>
+          <p>Designed and Developed by JetDev</p>
           <div className="footer__dev__sm">
             <Link href={'https://web.facebook.com/dearpotential/'}>
               <img className="header__text__sm__icon" src="/images/facebook.svg" alt="" />

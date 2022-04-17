@@ -39,6 +39,9 @@
           text-transform: capitalize;
           font-weight: 400;
           color: $color-white;
+          &:hover {
+            color: $color-secondary;
+          }
           & .btn {
             text-transform: capitalize;
           }

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;300&display=swap');
-// @import url('../asset/fonts/Futura-Md.ttf');
-
 /*
   Color Variables
   ---------------
@@ -34,7 +31,6 @@ $color-black: #000000;
 */
 $font-primary: 'Raleway', sans-serif;
 $font-secondary: 'Futura-Md';
-$font-tertiary: 'Prompt', sans-serif;
 /*
   Mobile Responsiveness
   ---------------------
@@ -68,7 +64,7 @@ input:hover,
 input:focus,
 input:active {
   outline: none;
-  background-color: tranparent;
+  background-color: transparent;
 }
 
 input::-webkit-input-placeholder {

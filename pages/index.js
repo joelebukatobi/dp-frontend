@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Layout from '@/components/Layout';
-import Latest from '@/components/Latest';
+import PostCard from '@/components/PostCard';
 import { API_URL } from '../config/index';
+import AboutFeature from '@/components/AboutFeature';
 const qs = require('qs');
 
 export default function Home({ bgPost }) {
@@ -21,8 +22,8 @@ export default function Home({ bgPost }) {
           </div>
           <div className="header__text">
             <h1 className="heading-1">Welcome to Dear Potential</h1>
-            <hr className="separator" />
-            <h4 className="heading-4 header__text__heading-three">We are Sane, whole and loved by God</h4>
+            <hr className="" />
+            <h4 className="heading-4 header__text__heading-three">We are Sane, Whole and Loved by God</h4>
             <div className="header__text__sm">
               <Link href={'https://web.facebook.com/dearpotential/'}>
                 <img className="header__text__sm__icon" src="images/facebook.svg" alt="" />
@@ -40,7 +41,7 @@ export default function Home({ bgPost }) {
         <div className="container">
           <div className="who-we-are">
             <div className="who-we-are__header">
-              <h2 className="heading-2">Who We Are</h2>
+              <h2>Who We Are</h2>
               <hr className="separator" />
             </div>
             <div className="who-we-are__body">
@@ -49,7 +50,7 @@ export default function Home({ bgPost }) {
                 <div className="who-we-are__body__container__border"></div>
               </div>
               <div className="who-we-are__body__text">
-                <p className="paragraph">
+                <p>
                   Dear Potential helps equip you with the knowledge, wisdom and tools you need to maximise your
                   relationships and singleness preparing you to live whole, sane and have a purposeful marriage centred
                   on Christ. It was founded by Deborah Briggs in August 2018 during her early twenties.
@@ -70,12 +71,12 @@ export default function Home({ bgPost }) {
         <div className="container">
           <div className="blog-post">
             <div className="news__header">
-              <h2 className="heading-2">Blog</h2>
+              <h2>Blog</h2>
               <hr className="separator" />
             </div>
             <div className="blog-post__posts">
-              {bgPost.map((latestPost) => (
-                <Latest key={latestPost.id} latestPost={latestPost} />
+              {bgPost.map((post) => (
+                <PostCard key={post.id} post={post} />
               ))}
             </div>
           </div>
@@ -86,9 +87,9 @@ export default function Home({ bgPost }) {
           <img src="images/banner-image.jpg" alt="" className="banner__image" />
           <div className="banner__text">
             <div className="banner__text__header">
-              <h2 className="heading-2">Newsletter</h2>
+              <h2>Newsletter</h2>
               <hr className="separator" />
-              <p className="paragraph">
+              <p>
                 Want to get the latest update from us?
                 <br />
                 Then fill the form below to subscribe to our monthly newsletter
@@ -101,24 +102,7 @@ export default function Home({ bgPost }) {
           </div>
         </div>
 
-        {/* <!-- Featured --> */}
-        <div className="container">
-          <div className="featured">
-            <div className="featured__txt">
-              <h2 className="heading-3">At Dear Potential</h2>
-              <p className="paragraph">
-                We are replacing lies with Gospel truths through our teachings, events and hangouts, we equip, educate
-                and inspire you to live purposeful, having a God-centered marriage as a result.
-              </p>
-              <img src="images/dots-image.svg" alt="" />
-            </div>
-            <div className="featured__container">
-              <img src="images/section-image-1.jpg" alt="" className="featured__container__img" />
-              <img src="images/section-image-2.jpg" alt="" className="featured__container__img" />
-              <img src="images/section-image-3.jpg" alt="" className="featured__container__img" />
-            </div>
-          </div>
-        </div>
+        <AboutFeature />
       </Layout>
     </div>
   );

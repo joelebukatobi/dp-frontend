@@ -1,34 +1,23 @@
 import Layout from '@/components/Layout';
+import Header from '@/components/Header';
 
 export default function donate() {
   return (
     <Layout>
       {/* <!-- Header --> */}
-      <div className="header header-two">
-        <div className="header__container">
-          <img className="header__container__image header-two__image" src="/images/donation-header.png" alt="" />
-        </div>
-        <div className="header__bg">
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-        </div>
-        <div className="header__text">
-          <h1 className="heading-2 header-two__heading">Donate</h1>
-          <hr className="separator" />
-          <p className="paragraph">Be a part of what God is helping us to do at Dear Potential</p>
-        </div>
-      </div>
-
+      <Header
+        title={'Donate'}
+        image={'/images/donation-bg.jpg'}
+        caption={'Be a part of what God is helping us to do at Dear Potential'}
+      />
       {/* <!--  About --> */}
       <div className="container">
         <div className="about">
           <div className="about__header">
-            <p className="paragraph">DONATE</p>
+            <p>DONATE</p>
             <hr className="separator" />
-            <h3 className="heading-3">Help bring out potential by maximizing singleness</h3>
-            <p className="paragraph">
+            <h3>Help bring out potential by maximizing singleness</h3>
+            <p>
               That's what we are all about, we aim to replace the lies the current generation have been sold with Gospel
               truths through our teachings, events and hangouts, we equip, educate and inspire you to live purposeful,
               having a God-centered marriage as a result.
@@ -55,9 +44,9 @@ export default function donate() {
         <img src="images/banner-image.jpg" alt="" className="banner__image" />
         <div className="banner__text">
           <div className="banner__text__header">
-            <h2 className="heading-2">Newsletter</h2>
+            <h2>Newsletter</h2>
             <hr className="separator" />
-            <p className="paragraph">
+            <p>
               Want to get the latest update from us?
               <br />
               Then fill the form below to subscribe to our monthly newsletter
@@ -74,8 +63,8 @@ export default function donate() {
       <div className="container">
         <div className="featured">
           <div className="featured__txt">
-            <h2 className="heading-3">At Dear Potential</h2>
-            <p className="paragraph">
+            <h2>At Dear Potential</h2>
+            <p>
               We are replacing lies with Gospel truths through our teachings, events and hangouts, we equip, educate and
               inspire you to live purposeful, having a God-centered marriage as a result.
             </p>

@@ -11,7 +11,7 @@ export default function Pagination({ page, total }) {
           {'<'}
         </button>
       )}
-      <p className="paragraph">{page}</p>
+      <p>{page}</p>
       {(page < lastPage || page === lastPage) && (
         <button className="btn" onClick={() => Router.push(`/blog?page=${page + 1}`)} disabled={page === lastPage}>
           {'>'}

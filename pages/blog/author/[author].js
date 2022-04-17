@@ -22,7 +22,7 @@ export default function AuthorPost({ postCategory, ltPost, author }) {
         <div className="header__text">
           <h1 className="heading-2 header-two__heading">Blog {/*<Link href="/"></Link> */}</h1>
           <hr className="separator" />
-          <p className="paragraph">
+          <p>
             {author} ~ Articles ({ltPost.length})
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function AuthorPost({ postCategory, ltPost, author }) {
         </div>
       </div>
       <div className="container">
-        <h4 className="heading-4">{ltPost.latestPost}</h4>
+        <h4>{ltPost.latestPost}</h4>
         <div className="blog-post">
           <div className="blog-post__posts">
             {ltPost.map((latestPost) => (

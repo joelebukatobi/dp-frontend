@@ -22,7 +22,7 @@ export default function PostCategories({ postCategory, ltPost, category }) {
         <div className="header__text">
           <h1 className="heading-2 header-two__heading">Blog {/*<Link href="/"></Link> */}</h1>
           <hr className="separator" />
-          <p className="paragraph">Category ~ {category}</p>
+          <p>Category ~ {category}</p>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function PostCategories({ postCategory, ltPost, category }) {
         </div>
       </div>
       <div className="container">
-        <h4 className="heading-4">{ltPost.latestPost}</h4>
+        <h4>{ltPost.latestPost}</h4>
         <div className="blog-post">
           <div className="blog-post__posts">
             {ltPost.map((latestPost) => (

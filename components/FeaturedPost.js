@@ -8,14 +8,14 @@ export default function FeaturedBlog({ featured }) {
         <div className="featured-post__main__card__picture">
           <img
             className="featured-post__main__card__picture__image"
-            src={featured.attributes.image.data.attributes.url}
+            src={`${API_URL}${featured.attributes.image.data.attributes.url}`}
             alt=""
           />
         </div>
         <div className="featured-post__main__card__text">
-          <h3 className="heading-3">{featured.attributes.name}</h3>
-          <p className="paragraph">{`${featured.attributes.introduction.substring(0, 250)}...`}</p>
-          <div className="featured-post__other__card__text__bottom">
+          <h3>{featured.attributes.name}</h3>
+          <p>{`${featured.attributes.introduction.substring(0, 150)}...`}</p>
+          <div className="details">
             <Link href={`/blog/author/${featured.attributes.user.data.attributes.username}?`}>
               <p className="post-details">{featured.attributes.user.data.attributes.username}</p>
             </Link>

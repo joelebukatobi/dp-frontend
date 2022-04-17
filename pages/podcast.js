@@ -17,7 +17,7 @@ export default function PodcastPage() {
         <div className="header__text">
           <h1 className="heading-2 header-two__heading">Podcast</h1>
           <hr className="separator" />
-          <p className="paragraph">Find a catalogue of our podcast</p>
+          <p>Find a catalogue of our podcast</p>
         </div>
       </div>
     </Layout>
