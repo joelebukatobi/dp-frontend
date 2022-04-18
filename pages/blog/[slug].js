@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import { API_URL } from '@/config/index';
 import { useRouter } from 'next/router';
+import Header from '@/components/Header';
 const qs = require('qs');
 
 export default function BlogPost({ post }) {
@@ -47,7 +48,7 @@ export default function BlogPost({ post }) {
       <div className="container">
         <div className="post">
           <div className="post__top">
-            <img className="post__top__image" src={post.attributes.image.data.attributes.url} alt="" />
+            <img className="post__top__image" src={`${API_URL}${post.attributes.image.data.attributes.url}`} alt="" />
           </div>
 
           <div className="post__body">
