@@ -13,7 +13,7 @@ export default function Header({ title, caption, image }) {
       <div className="header-two__text">
         <h1 className="">{title}</h1>
         <hr className="separator" />
-        <p>{caption}</p>
+        <h4>{caption}</h4>
       </div>
     </div>
   );

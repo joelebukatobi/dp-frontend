@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import { API_URL } from '@/config/index';
 import { useRouter } from 'next/router';
-import Header from '@/components/Header';
+import BlogHeader from '@/components/BlogHeader';
 const qs = require('qs');
 
 export default function BlogPost({ post }) {
@@ -10,40 +10,16 @@ export default function BlogPost({ post }) {
   return (
     <Layout>
       {/* <!-- Header --> */}
-      <div className="header header-two">
-        <div className="header__container">
-          <img className="header__container__image header-two__image" src="/images/slug-header.png" alt="" />
-        </div>
-        <div className="header__bg">
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-          <div className="header__bg__section"></div>
-        </div>
-        <div className="header__text">
-          <div className="header__text__top">
-            <p className="paragraph header-two__text__top__category">
-              {post.attributes.category.data.attributes.name} ~ {new Date(post.attributes.date).toDateString('en-US')}
-            </p>
-          </div>
-          <h1 className="heading-2 header-two__heading">{post.attributes.name}</h1>
-          {/* <!-- <hr className="separator" /> --> */}
-          <div className="header__text__bottom">
-            <div className="header__text__bottom__container">
-              {/* <img
-                className="header__text__bottom__container__image"
-                src={post.attributes.user.data.attributes.image.data.attributes.url}
-                alt=""
-              /> */}
-            </div>
-            <div className="header__text__bottom__text">
-              <Link href={`/blog/author/${post.attributes.user.data.attributes.username}?`}>
-                <p>{post.attributes.user.data.attributes.username}</p>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <BlogHeader
+        date={`${post.attributes.category.data.attributes.name}${' ~ '}${new Date(post.attributes.date).toDateString(
+          'en-US'
+        )}`}
+        title={post.attributes.name}
+        bgImage={'none'}
+        profile={`${API_URL}${post.attributes.user.data.attributes.photo.data.attributes.url}`}
+        username={post.attributes.user.data.attributes.username}
+      />
 
       <div className="container">
         <div className="post">

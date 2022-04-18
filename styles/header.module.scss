@@ -145,14 +145,21 @@
     & h1 {
       color: $color-white;
       text-align: center;
+      width: 100%;
     }
-    & p {
-      width: 70%;
+    & h4 {
+      width: 100%;
       text-align: center;
       color: $color-white;
       font-weight: 600;
       font-family: $font-primary;
     }
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
     &__sm {
       margin-top: 3.2rem;
       &__icon {
@@ -160,6 +167,24 @@
         cursor: pointer;
         &:last-child {
           margin-left: 0.8rem;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      &__container {
+        height: 8rem;
+        width: 8rem;
+        overflow: hidden;
+        border-radius: 100%;
+        & img {
+          height: 100%;
+          width: 100%;
         }
       }
     }
@@ -178,10 +203,11 @@
     &__text {
       & h1 {
         font-size: 3.2rem;
+        margin-bottom: 2.4rem;
       }
       padding: 0 2.4rem;
-      &__heading-three {
-        width: 100%;
+      & h4 {
+        width: 70%;
       }
     }
   }
