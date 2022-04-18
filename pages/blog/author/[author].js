@@ -1,17 +1,16 @@
 import { API_URL } from '@/config/index';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
-import Latest from '@/components/Latest';
+import PostCard from '@/components/PostCard';
 const qs = require('qs');
 
 export default function AuthorPost({ postCategory, ltPost, author }) {
-  console.log();
   return (
     <Layout>
       {/* <!-- Header --> */}
       <div className="header header-two">
         <div className="header__container">
-          <img className="header__container__image header-two__image" src="/images/blog-header.png" alt="" />
+          <img className="header__container__image header-two__image" src="" alt="" />
         </div>
         <div className="header__bg">
           <div className="header__bg__section"></div>
@@ -51,11 +50,11 @@ export default function AuthorPost({ postCategory, ltPost, author }) {
         </div>
       </div>
       <div className="container">
-        <h4>{ltPost.latestPost}</h4>
+        <h4>{ltPost.post}</h4>
         <div className="blog-post">
           <div className="blog-post__posts">
-            {ltPost.map((latestPost) => (
-              <Latest key-={latestPost.id} latestPost={latestPost} />
+            {ltPost.map((post) => (
+              <PostCard key={post.id} post={post} />
             ))}
           </div>
         </div>
@@ -87,7 +86,6 @@ export async function getServerSideProps({ query: { author } }) {
     fetch(`${API_URL}/api/blogs?${ltPost}`),
   ]);
   const blog = await Promise.all(res.map((res) => res.json()));
-  console.log(blog);
   return {
     props: {
       postCategory: blog[0].data,

@@ -10,8 +10,6 @@ import { BLOG_COUNT } from '@/config/index';
 const qs = require('qs');
 
 export default function index({ featured, reBlog, postCategory, ltPost, page }) {
-  // console.log(ltPost.meta.pagination.total);
-
   return (
     <Layout>
       {/* <!-- Header --> */}
@@ -165,7 +163,6 @@ export async function getServerSideProps({ query: { page = 1 } }) {
     fetch(`${API_URL}/api/blogs?${ltPost}`),
   ]);
   const blog = await Promise.all(res.map((res) => res.json()));
-  console.log(blog);
   return {
     props: {
       featured: blog[0].data[0],

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { API_URL } from '@/config/index';
 export default function Latest({ post }) {
-  console.log(`${API_URL}${post.attributes.image.data.attributes.url}`);
   return (
     <Link href={`/blog/${post.attributes.slug}`}>
       <div className="blog-post__posts__card">

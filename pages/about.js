@@ -7,7 +7,11 @@ export default function AboutPage() {
     <div>
       <Layout>
         {/* <!-- Header --> */}
-        <Header title={'About Us'} image={'None'} caption={"Discover what we've about at Dear Potential"} />
+        <Header
+          title={'About Us'}
+          image={'images/about-bg.jpg'}
+          caption={"Discover what we've about at Dear Potential"}
+        />
 
         {/* <!--  About --> */}
         <div className="container">

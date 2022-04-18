@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { API_URL } from '@/config/index';
 export default function FeaturedBlog({ featured }) {
-  // console.log(featured);
   return (
     <Link href={`/blog/${featured.attributes.slug}`}>
       <div className="featured-post__main__card">

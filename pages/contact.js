@@ -9,8 +9,6 @@ export default function ContactPage() {
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
 
-  console.log(email, message, name, subject);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -21,7 +19,7 @@ export default function ContactPage() {
       },
       body: JSON.stringify({
         text: message,
-        to: 'jonwuanaku@mkelnetworks.com',
+        to: 'joelebukatobi@outlook.com',
         subject: subject,
         from: email,
       }),
@@ -32,8 +30,6 @@ export default function ContactPage() {
       console.log(error);
       // return;
     }
-    // console.log(data);
-    console.log(name, email, subject, message);
   };
 
   return (

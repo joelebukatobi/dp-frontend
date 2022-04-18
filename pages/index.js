@@ -125,7 +125,6 @@ export async function getServerSideProps() {
 
   const res = await fetch(`${API_URL}/api/blogs?${bgPost}`);
   const blog = await res.json();
-  console.log(blog);
 
   return {
     props: {

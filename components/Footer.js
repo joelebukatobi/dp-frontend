@@ -12,7 +12,7 @@ export default function Footer() {
         <ul className="footer__text">
           <li className="footer__text__item">
             <p>
-              <span>©</span> 2020 Dear Potential All Rights Reserved
+              <span>©</span> 2022 Dear Potential All Rights Reserved
             </p>
           </li>
           <li className="footer__text__item">
