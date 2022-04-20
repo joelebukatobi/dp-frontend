@@ -70,9 +70,9 @@ export default function Home({ bgPost }) {
         {/* <!-- Blog Posts --> */}
         <div className="container">
           <div className="blog-post">
-            <div className="news__header">
+            <div>
               <h2>Blog</h2>
-              <hr className="separator" />
+              <hr />
             </div>
             <div className="blog-post__posts">
               {bgPost.map((post) => (
